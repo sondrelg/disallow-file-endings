@@ -1,0 +1,9 @@
+- id: disallow-file-extensions
+  name: disallow file extensions
+  entry: disallow_file_extensions
+  description: |
+    Doesn't let you commit files with certain extensions. 
+    Useful for enforcing e.g., .yaml over .yml, or whatever else you want to do.
+  language: rust
+  types: [ file ]
+  stages: [ commit ]
